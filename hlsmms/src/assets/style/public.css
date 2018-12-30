@@ -1,0 +1,160 @@
+/* 公共样式 */
+body{
+    font-size: 14px;
+}
+
+.el-header,.el-footer{
+  background:#f9f9f9;
+  color: #333;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/* 左侧栏 */
+.el-aside{
+  background:url(../leftBG.png) repeat-y;
+  color:white;
+ 
+}
+
+/* 左侧栏字体颜色 */
+.el-submenu__title{
+    color: #e9eef3;
+    background: url(../menuBG.png) repeat-x;
+    height:33px;
+    line-height:33px;
+    text-align: right;
+    margin-bottom:10px;
+    border-radius:5px 0px 0px 5px;
+}
+/* 左侧二级菜单hover效果 */
+.el-menu-item:hover, .el-menu-item:focus{
+    color:white;
+    background: rgb(255,255,255,0.5);
+}
+/* 激活的样式 */
+.el-submenu .is-active {
+    color: rgb(255,255,255,0.9);
+    background:pink;
+    font-weight: bold;
+}
+.el-menu-item{
+    color:pink;
+}
+.el-submenu .el-menu-item{
+    height:30px;
+    line-height:30px;
+    border-radius: 5px 0px 0px 5px;
+    margin-bottom:5px;
+    text-align: right;
+}
+
+.el-menu{
+  background:none;
+  width:199px;
+ border: none;
+ 
+}
+/* 分类菜单上面的字 */
+.top p{
+    margin-left: 60px;
+   margin-bottom: 20px;
+  }
+  .top h1{
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: "黑体";
+    
+  }
+  .el-submenu__title:hover{
+      color:white;
+      background: #333;
+  }
+  .el-submenu__icon-arrow{
+      display: none;
+  }
+
+  /* ------------------------------------------------------------------------------------------------ */
+
+  /* 右上侧 */
+ 
+.el-header h2{
+    margin-top: 10px;
+    color: #000;
+    font-size: 22px;
+}
+.el-header p{
+    margin:0;
+}
+
+/* 右下 */
+.el-footer p{
+    margin:0;
+    padding: 0;
+    border-top:1px solid #cccc;
+}
+
+/* 右中 */
+/* 提示消息 */
+.el-alert{
+    margin-bottom: 10px;
+}
+/* 渐变色 */
+.el-card__header {
+    background: linear-gradient(#fff,#e5e5e5);
+    height:40px;
+    line-height: 40px;
+}
+  
+/* .el-main{
+  background: #e9eef3;
+  color: #333;
+  line-height: 160px;
+} */
+/* .el-container{
+  height: 100%;
+} */
+
+/* ---------------------------------------- */
+/* 主体内容 */
+#mainContent{
+    display: flex; 
+    flex-wrap: wrap; 
+}
+/* 三个子元素（rt,rm,rb）的宽度为100% */
+#mainContent>*{
+    width:100%;
+    max-height: 500px;
+}
+
+
+
+
+
+/* 用户添加 */
+.el-input{
+    width:40%;
+}
+.el-input--suffix{
+    width:80%;
+}
+
+/* 提交按钮改变样式 */
+.el-button--primary{
+    background: linear-gradient(#006030,#28ff28);
+}
+.el-button:hover, .el-button:focus{
+    background: linear-gradient(#ff0000,#ff60Af);
+}
+
+/* 添加管理表单的字体颜色 */
+.el-form-item__label{
+    color: #000;
+    font-weight: bold;
+}
+
+/* 添加管理的修改按钮 */
+.el-radio-group{
+    margin-bottom: 16px;
+}
